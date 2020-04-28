@@ -1,0 +1,31 @@
+*,$revision,Number,Link,Text_area,Date,Time,Date_and_time,Multi_choice,Drop_down,Attachment,User_selection,Text,Calculated,Radio_button,Check_box,Group_selection,Rich_text,Table,Text_0,Number_0
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,"attachment_csv_file.csv
+attachment_docx_file.docx
+attachment_jpg_file.jpg",cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,attachment_csv_file.csv,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,attachment_docx_file.docx,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,attachment_jpg_file.jpg,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,attachment_png_file.png,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,attachment_xlsx_file.xlsx,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,npp.7.8.4.Installer.x64.exe,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100

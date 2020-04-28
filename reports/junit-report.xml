@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="27" failures="0" time="547.204">
+  <testsuite name="Export with --export option: Export data with attachment (-b)" errors="0" failures="0" skipped="0" timestamp="2020-04-28T06:33:58" time="61.872" tests="6">
+    <testcase classname="Export with --export option: Export data with attachment (-b)" name="Case 179: Verify that the attachment will be displayed as text when not specifying -b param" time="2.549">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with attachment (-b)" name="Case 180: Verify that the attachment will be displayed as text when specifying -b param" time="11.707">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with attachment (-b)" name="Case 181: Verify that if user specify non-existed folder, this folder will be created" time="11.886">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with attachment (-b)" name="Case 184-185-186: Verify the case with attachment are text files, image files or exe files (doc, xls, csv, png, jpg, exe)" time="11.996">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with attachment (-b)" name="Case 187: Verify that the attachment will NOT be downloaded if user does NOT have proper permissions" time="2.293">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with attachment (-b)" name="Case 188: In combination with params -o -e -q, verify that the attachment will be downloaded when specifying -b" time="11.917">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export with --export option: Export data using query (-q)" errors="0" failures="0" skipped="0" timestamp="2020-04-28T06:35:00" time="420.005" tests="5">
+    <testcase classname="Export with --export option: Export data using query (-q)" name="Case 166: Verify that data will be returned when using the query which match record in kintone" time="24.083">
+    </testcase>
+    <testcase classname="Export with --export option: Export data using query (-q)" name="Case 167: Verify that data will be returned when using the query with -q include limit, offset" time="1.727">
+    </testcase>
+    <testcase classname="Export with --export option: Export data using query (-q)" name="Case 168: Verify that the error message will be returned in file exported when using the query which doesnot match any record" time="1.221">
+    </testcase>
+    <testcase classname="Export with --export option: Export data using query (-q)" name="Case 169: Verify that error will be displayed when using non-existed field code" time="1.136">
+    </testcase>
+    <testcase classname="Export with --export option: Export data using query (-q)" name="Case 170: Verify that error will be displayed when using invalid query format" time="1.085">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export with --export option: Export data with output format (-o)" errors="0" failures="0" skipped="0" timestamp="2020-04-28T06:42:00" time="19.227" tests="6">
+    <testcase classname="Export with --export option: Export data with output format (-o)" name="Case 147: Verify that data can be exported in csv format as default when executing command without specifying -o" time="1.537">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with output format (-o)" name="Case 147: Guest space - Verify that data can be exported in csv format as default when executing command without specifying -o" time="6.769">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with output format (-o)" name="Case 148: Verify that data can be exported in json format" time="1.535">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with output format (-o)" name="Case 149: Verify that data can be exported in csv format" time="1.532">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with output format (-o)" name="Case 150: Verify that default value &quot;csv&quot; will be used when using wrong format (e.g.. -o html)" time="1.795">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with output format (-o)" name="Case 151: API Token - Verify that data can be exported in json format" time="1.443">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export with --export option: Export data with field (-c)" errors="0" failures="0" skipped="0" timestamp="2020-04-28T06:42:19" time="17.246" tests="5">
+    <testcase classname="Export with --export option: Export data with field (-c)" name="Case 172: Verify that only data of fields listed in -c parameter are returned" time="1.569">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with field (-c)" name="Case 172: Guest space - Verify that only data of fields listed in -c parameter are returned" time="5.769">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with field (-c)" name="Case 175: In the combination with -e, Verify that only data of fields listed in -c parameter are returned" time="1.517">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with field (-c)" name="Case 176: In the combination with -e -q, Verify that only data of fields listed in -c parameter are returned" time="1.826">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with field (-c)" name="Case 177: In the combination with -e -q -g, in which value of -g is 0, Verify that only data of fields listed in -c parameter are returned" time="1.879">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export with --export option: Export data with encoding and output format (-e) (-o)" errors="0" failures="0" skipped="0" timestamp="2020-04-28T06:42:36" time="16.393" tests="3">
+    <testcase classname="Export with --export option: Export data with encoding and output format (-e) (-o)" name="Case 163: Verify that data can be exported in csv format with sjis" time="3.635">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with encoding and output format (-e) (-o)" name="Case 163: Guest space - Verify that data can be exported in csv format with sjis" time="5.933">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with encoding and output format (-e) (-o)" name="Case 164: Verify that data can be exported in json format with euc-jp" time="1.427">
+    </testcase>
+  </testsuite>
+  <testsuite name="Export with --export option: Export data with encoding format (-e)" errors="0" failures="0" skipped="0" timestamp="2020-04-28T06:42:53" time="12.381" tests="2">
+    <testcase classname="Export with --export option: Export data with encoding format (-e)" name="Case 154: Verify that data can be exported to a file with utf-8 encoding" time="1.548">
+    </testcase>
+    <testcase classname="Export with --export option: Export data with encoding format (-e)" name="Case 154: Guest space - Verify that data can be exported to a file with utf-8 encoding" time="6.158">
+    </testcase>
+  </testsuite>
+</testsuites>

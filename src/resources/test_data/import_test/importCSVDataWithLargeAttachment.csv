@@ -1,0 +1,5 @@
+*,$revision,Number,Link,Text_area,Date,Time,Date_and_time,Multi_choice,Drop_down,Attachment,User_selection,Text,Calculated,Radio_button,Check_box,Group_selection,Rich_text,Table,Text_0,Number_0
+*,1,1000,https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z,"sample1
+sample2
+sample3
+sample4",sample1,attachment_large_9M.txt,cybozu,This is test test1,2000,sample1,,everyone,<div>This is rich test</div>,54,this is test,100

@@ -1,0 +1,50 @@
+{
+    "INVALID_USER_PASSWORD_ERROR": {
+        "errorType": "520",
+        "code": "CB_WA01",
+        "message": "Password authentication failed. The value in http header of X-Cybozu-Authorization is not valid."
+    },
+    "INVALID_API_TOKEN_ERROR": {
+        "errorType": "520",
+        "code": "GAIA_IA02",
+        "message": "The specified API token does not match the API token generated via an app. If the settings are correct, you might have missed to click \"Update App\""
+    },
+    "NO_PERMISSION_API_TOKEN_ERROR": {
+        "errorType": "403",
+        "code": "GAIA_NO01",
+        "message": "Using this API token, you cannot run the specified API."
+    },
+    "PERMISSION_ERROR": {
+        "errorType": "403",
+        "code": "CB_NO02",
+        "message": "No privilege to proceed."
+    },
+    "INVALID_QUERY_ERROR": {
+        "message": "unsupported query format"
+    },
+    "INVALID_FIELD_ERROR": {
+        "errorType": "520",
+        "code": "GAIA_IQ11",
+        "message": "Specified field (%FIELD_CODE%) not found"
+    },
+    "INVALID_APP_ID_ERROR": {
+        "errorType": "404",
+        "code": "GAIA_AP01",
+        "message": "The app (ID: %APP_ID%) not found. The app may have been deleted."
+    },
+    "IMPORT_EXPORT_SPECIFIED_TOGETHER_COMMAND_ERROR": {
+        "message": "The options --import and --export cannot be specified together!"
+    },
+    "UNKNOWN_FLAG_COMMAND_ERROR": {
+        "message": "unknown flag"
+    },
+    "INVALID_LINE_ERROR": {
+        "message": "expected argument for flag `-l', but got option `%INVALID_LINE_NUMBER%'"
+    },
+    "INVALID_GUEST_SPACE_ARGUMENT_PARSING_ERROR": {
+        "message": "invalid argument for flag `-g' (expected uint64): strconv.ParseUint: parsing \"%VALUE%\": invalid syntax"
+    },
+    "INVALID_GUEST_SPACE_ARGUMENT_ERROR": {
+        "message": "expected argument for flag `-g', but got option `%VALUE%'"
+    }
+}

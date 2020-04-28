@@ -1,0 +1,6 @@
+.idea
+.vscode
+node_modules
+src/resources/export_data.csv
+cli-kintone
+./reports

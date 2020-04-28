@@ -1,0 +1,1115 @@
+{
+  "domain": "clitool-test.kintone.com",
+  "administrators": {
+    "username": "cybozu",
+    "password": "demo@123"
+  },
+  "orgInfo": {
+    "organizations": [
+      {
+        "id": "1",
+        "code": "newOrg",
+        "name": "newOrg",
+        "localName": "",
+        "localNameLocale": "ja",
+        "parentCode": "",
+        "description": ""
+      }
+    ]
+  },
+  "groupInfo": {
+    "id": "1",
+    "code": "newRole",
+    "name": "newRole",
+    "description": "This is a new role"
+  },
+  "users": {
+    "amount": 3,
+    "clone": [
+      {
+        "username": "user1",
+        "password": "user1",
+        "code": "user1",
+        "id": "9"
+      },
+      {
+        "username": "user2",
+        "password": "user2",
+        "code": "user2",
+        "id": "10"
+      },
+      {
+        "username": "user3",
+        "password": "user3",
+        "code": "user3",
+        "id": "11"
+      }
+    ]
+  },
+  "guestSpaceInfo": [
+    {
+      "spaceInfo": {
+        "id": "4",
+        "spaceName": "Initial Space - Guest",
+        "threadId": "4"
+      },
+      "apps": [
+        {
+          "appId": "19",
+          "code": "",
+          "name": "[Import] All Fields",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:20:27.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:20:27.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "4",
+          "threadId": "4",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "EjbXls3js8IFl3Gh6x0GjWVuzK8Jj8ijtfMLa4wd",
+            "managePermission": "lL57LrynVLsBV3zBllQaEMfbpLSBggnXvJyWD3po",
+            "noPermission": "rgkgqHls7NMAIwvRaOkkfQmpr27ZgqHoKLOHXUnO"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "20",
+          "code": "",
+          "name": "App4Lookup",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:20:27.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:20:27.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "4",
+          "threadId": "4",
+          "fieldCodes": [
+            "Status",
+            "Assignee",
+            "Updated_datetime",
+            "Created_datetime",
+            "Number",
+            "Categories",
+            "Record_number",
+            "Text",
+            "Created_by",
+            "Updated_by",
+            "Text_area"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "apiToken": {
+            "fullPermission": "4FDzKRUaUQ54L5aAtJotYtRCf0UfmMYOJ9Dp8627",
+            "managePermission": "6ItohzhJK5hSgey5JqhF629shcbvkNCUCLU9zrEU",
+            "noPermission": "bim2t61vaZzpVUHFOPqtAqT2pHsvVLyUiZ5ouFZ7"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "21",
+          "code": "",
+          "name": "[Export] All Fields (1)",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:20:27.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:20:27.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "4",
+          "threadId": "4",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "zM21BpAuk4n7e35atzVhkSh9CUm2OR3egWaLir0N",
+            "managePermission": "9ceKpn3OzQ74HAmoMJCL2rGEhZruK5es7Vixkc0V",
+            "noPermission": "F4L9PtrqbCsBeccEfciC8dBtSKL6c91BXsHBdkEV"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "22",
+          "code": "",
+          "name": "[Export] All Fields (2)",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:20:27.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:20:27.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "4",
+          "threadId": "4",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "UQ4Aje8LjAxA6n7yRlooht99zvAxcf0hUzT5sVWF",
+            "managePermission": "K4l7g91aKqg93KSexmwt1fZfA3WwspeiFIZiUQp7",
+            "noPermission": "xUuj1x2ERK7uRQCYStS63vqqArDZp3NfNIq8ZyYR"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "23",
+          "code": "",
+          "name": "[Import] All Fields-Prohitbit Duplicate",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:20:27.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:20:27.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "4",
+          "threadId": "4",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "OOHEwVPQB4b4OOZztlumc6vnoi0cHqpw4tWvwtlz",
+            "managePermission": "Dh31IEhDUmeeOlYcCQhOJF304OjX5FUJ41WGvjag",
+            "noPermission": "gFiFpdJUrDnzcpPL07vd9JRJZadaGYn0HCI9XRT0"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "24",
+          "code": "",
+          "name": "[Import] All Fields- Prohibit duplicate values",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:20:27.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:20:27.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "4",
+          "threadId": "4",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "lidWP3neLUNWvsQ07SHejdE6eUkNr7kARBuXo6On",
+            "managePermission": "uZ8BpiFuIGLTUcS6kzYBok3EaNUDVOmzzfngkTSl",
+            "noPermission": "5GN7UOipX0Xz0XSkOlyFFb2NfCw1CVgynYvLL0LX"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "normalSpaceInfo": [
+    {
+      "spaceInfo": {
+        "id": "6",
+        "spaceName": "Initial Space",
+        "threadId": "6"
+      },
+      "apps": [
+        {
+          "appId": "31",
+          "code": "",
+          "name": "[Import] All Fields",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:21:59.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:21:59.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "6",
+          "threadId": "6",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Department_selection",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "bWqAidgFKEjeNyzsz6yoOpGYIs55JGX0LKFe9ZxD",
+            "managePermission": "VYdGOfhfk3LsmhedpegyYPvERrFogAlV8mkoKY3O",
+            "noPermission": "RDbin35xgQUW9yVpZhZ91oOUCci83YX0MFEXEqr4"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "32",
+          "code": "",
+          "name": "App4Lookup",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:21:59.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:21:59.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "6",
+          "threadId": "6",
+          "fieldCodes": [
+            "Status",
+            "Assignee",
+            "Updated_datetime",
+            "Created_datetime",
+            "Number",
+            "Categories",
+            "Record_number",
+            "Text",
+            "Created_by",
+            "Updated_by",
+            "Text_area"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "apiToken": {
+            "fullPermission": "GlGBaaKViXu5B0UF8lmOWOAZ1wQO2QhIpLpxG96d",
+            "managePermission": "o9CC6gEtj1sElPHmxpuNpAqbIoIucjLrKiU9zME2",
+            "noPermission": "a5pbgIlqDbGZgrN8A1etNLgqmaip8RWqePKpPcyS"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "33",
+          "code": "",
+          "name": "[Export] All Fields (1)",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:21:59.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:21:59.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "6",
+          "threadId": "6",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "Text_2",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Department_selection",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "FKyMqDKoF5jObrycFNacqVwoFfLd48AsdRo8atPO",
+            "managePermission": "qGfHSMIJUlwxTlndB7jLXHOWUpRBPPk75mg9ifcM",
+            "noPermission": "ag4GUaxhIAxopGJduOTcc4tdIO9XUiGxOAJVPtwM"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "34",
+          "code": "",
+          "name": "[Export] All Fields (2)",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:21:59.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:21:59.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "6",
+          "threadId": "6",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Department_selection",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "BnFbn36NJ49qheX2UzeDWWEkUzboVP5zhjJaWBwC",
+            "managePermission": "QOpEKqH5XNafpODlEv2IaIolAHwBe8OMAaTTuhld",
+            "noPermission": "pjYp1rzaLEXnPt3GeB7DlTFUUeKDQgkMidI8wf4s"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "35",
+          "code": "",
+          "name": "[Import] All Fields-Prohitbit Duplicate",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:21:59.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:21:59.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "6",
+          "threadId": "6",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "vEZAGvoltD9kjkcs0IyiRvJInoGaWRpwT24Jp53Z",
+            "managePermission": "Lp2nlYuD4J6uz5tjQjdYvoHljevltpvuxYdbSt5X",
+            "noPermission": "8EqUyMDhtMDeiEDQOAiIX9WglkGcD3WcN8lK6eHv"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        },
+        {
+          "appId": "36",
+          "code": "",
+          "name": "[Import] All Fields- Prohibit duplicate values",
+          "description": "<div><br /></div>",
+          "createdAt": "2020-04-24T08:21:59.000Z",
+          "creator": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "modifiedAt": "2020-04-24T08:21:59.000Z",
+          "modifier": {
+            "code": "cybozu",
+            "name": "cybozu"
+          },
+          "spaceId": "6",
+          "threadId": "6",
+          "fieldCodes": [
+            "Time",
+            "Attachment",
+            "Group_selection",
+            "Check_box",
+            "Updated_by",
+            "Created_datetime",
+            "Radio_button",
+            "Number",
+            "Related_records_1",
+            "Record_number",
+            "Lookup",
+            "Created_by",
+            "Multi_choice",
+            "Drop_down",
+            "User_selection",
+            "Status",
+            "Assignee",
+            "Text_1",
+            "Table",
+            "Categories",
+            "Rich_text",
+            "Department_selection",
+            "Text",
+            "Calculated",
+            "Text_area",
+            "Date",
+            "Updated_datetime",
+            "Date_and_time",
+            "Link"
+          ],
+          "userAppPermissions": {
+            "userNotHaveAppManagementRight": "",
+            "userNotHavePermission": "",
+            "userNotHaveViewRecordsRight": "",
+            "userNotHaveAddRecordsRight": "",
+            "userNotHaveEditRecordsRight": "",
+            "userNotHaveDeleteRecordsRight": ""
+          },
+          "userRecordPermissions": {
+            "userNotHavePermission": "",
+            "userNotHaveViewRight": "",
+            "userNotHaveEditRight": "",
+            "userNotHaveDeleteRight": ""
+          },
+          "userFieldPermissions": {
+            "userNotHaveRightOnAttachmentField": "user3"
+          },
+          "apiToken": {
+            "fullPermission": "O9aUTC3B1pZyvAV3h4NNpz4duuuqVEWEJmu2jawD",
+            "managePermission": "gclHfZ7OIBZCSJOsTvtGM3zlrHAfITXL3a6IaRqC",
+            "noPermission": "YpZJPq7UguSI7YO0hoAI9xNjrBGegLZvHhMAsDgr"
+          },
+          "userPermissions": {
+            "userAppPermissions": {
+              "userNotHaveAppManagementRight": "user2",
+              "userNotHavePermission": "user2",
+              "userNotHaveViewRecordsRight": "user2",
+              "userNotHaveAddRecordsRight": "user2",
+              "userNotHaveEditRecordsRight": "user2",
+              "userNotHaveDeleteRecordsRight": "user2"
+            },
+            "userRecordPermissions": {
+              "userNotHavePermission": "",
+              "userNotHaveViewRight": "",
+              "userNotHaveEditRight": "",
+              "userNotHaveDeleteRight": ""
+            },
+            "userFieldPermissions": {
+              "userNotHaveViewRightOnTextField": "",
+              "userNotHaveEditRightOnTextField": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
