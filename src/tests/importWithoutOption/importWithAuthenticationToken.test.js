@@ -4,7 +4,7 @@ import errorMessage from '../../common/kintoneCliErrorMessage.json';
 import { getFieldArray } from '../../utils/csvUtils';
 import { deleteAllAppData } from '../../utils/kintoneApiUtils';
 
-describe.skip('Import without --import option: Authenticate with token (-t)', () => {
+describe('Import without --import option: Authenticate with token (-t)', () => {
     const appInfo = apps.normalSpaceApp;
     const userCreds = users.admin;
     const importedCSVFile = filePaths.import_test.importCSVData;

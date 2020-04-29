@@ -11,7 +11,7 @@ describe('Import with --import option: Import new attachment with file (-b)', ()
     const attachmentFolder = filePaths.attachmentFolder;
     const query = makeQueryToGetAppData();
 
-    test.only('C050: Verify that data in attachment folder is uploaded and imported correctly', async () => {
+    test('C050: Verify that data in attachment folder is uploaded and imported correctly', async () => {
         const importTest = new ImportTestCommon(appInfo, userCreds, importedCSVFile);
 
         const result = await importTest.importWithAttachment(attachmentFolder);
@@ -19,7 +19,6 @@ describe('Import with --import option: Import new attachment with file (-b)', ()
         importTest.verifyCliKintoneSuccessMessage(result);
 
         const fieldNames = await getFieldArray(importedCSVFile);
-        console.log(fieldNames);
         const expectedDataFile = filePaths.import_test.importCSVDataWithAttachmentExpected;
         await importTest.verifyImportedDataWithAttachment(fieldNames, expectedDataFile, query);
         await importTest.verifyImportedAttachments(fieldNames, query);
@@ -67,7 +66,7 @@ describe('Import with --import option: Import new attachment with file (-b)', ()
 
     // This case take a lot of time to execute, especially when the network is slow
     // So it will be temporary set as skip
-    test.skip('C052: Verify the case in which upload file size is large (e.g.. <=10 Mb)', async () => {
+    test('C052: Verify the case in which upload file size is large (e.g.. <=10 Mb)', async () => {
         const importedDataFile = filePaths.import_test.importCSVDataWithLargeAttachment;
         const importTest = new ImportTestCommon(appInfo, userCreds, importedDataFile);
 

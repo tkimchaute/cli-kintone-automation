@@ -145,7 +145,12 @@ export default class ExportTestCommon extends CliKintoneTestBase {
      * @param {Object} basicAuth
      * @returns {Promise<void>}
      */
-    async verifyExportAttachmentFileData(folderAttachmentPath, fieldNames, query, basicAuth = {}) {
+    async verifyExportAttachmentFileData(
+        folderAttachmentPath,
+        fieldNames,
+        query = '',
+        basicAuth = {}
+    ) {
         const expectedAttachmentFileNames = await getAttachmentList(this._exportFile);
         const expectedFileContentArray = [];
         for (const fileName of expectedAttachmentFileNames) {

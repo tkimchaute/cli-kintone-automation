@@ -43,14 +43,14 @@ describe('Other: Testing on guest space without using import/export function', (
         importTest.verifyErrorCommandFailed(result, expectedError);
     });
 
-    test.skip('C134: Verify that if user specify the value of -g as 0, -g param will be ignored', async () => {
+    test('C134: Verify that if user specify the value of -g as 0, -g param will be ignored', async () => {
         // -- Prepare data
         const preparedCSVFile = filePaths.export_test.exportDataPreparation;
         const importTest = new ImportTestCommon(appInfo, userCreds, preparedCSVFile);
         await importTest.importWithUserNamePassword();
 
         // -- Execute cli-kintone command with -g = 0 (ignore guest app, it means data will be exported from normal app)
-        let fieldNames = await getFieldArray(preparedCSVFile);
+        const fieldNames = await getFieldArray(preparedCSVFile);
         // Remove field names which their values are incremental ids
         fieldNames.splice(fieldNames.indexOf('Table'), 1);
         const actualExportedDataFile = filePaths.export_test.actualExportedCSVData;

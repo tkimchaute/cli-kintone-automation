@@ -37,7 +37,7 @@ const getAppDataByApi = async (
             query: query,
         });
 
-        return response;
+        return sortObjectArray(response);
     } catch (e) {
         if (e.response) {
             return e.response;
@@ -256,6 +256,26 @@ const makeJsonDataFileWithAttachment = (data, filePath) => {
     } catch {
         console.log('Error: can not export json');
     }
+};
+
+const sortObjectKeysByAlphabet = obj => {
+    const ordered = {};
+    Object.keys(obj)
+        .sort()
+        .forEach(function(key) {
+            ordered[key] = obj[key];
+        });
+
+    return ordered;
+};
+
+const sortObjectArray = objectArr => {
+    objectArr.forEach(function(el) {
+        const i = objectArr.indexOf(el);
+        objectArr[i] = sortObjectKeysByAlphabet(el);
+    });
+
+    return objectArr;
 };
 
 module.exports = {

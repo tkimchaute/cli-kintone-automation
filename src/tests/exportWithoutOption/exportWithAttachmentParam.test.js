@@ -26,14 +26,14 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
     const attachmentFolder = filePaths.attachmentFolder;
     let fieldNames = '';
 
-    test('Case 179: Verify that the attachment will be displayed as text when not specifying -b param', async () => {
+    test('Case 339: Verify that the attachment will be displayed as text when not specifying -b param', async () => {
         const fieldArg = `-c ${fieldNames}`;
 
         const exportTest = new ExportTestCommon(
             appInfo,
             userCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg
         );
         await exportTest.exportWithUserNamePassword();
@@ -43,7 +43,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
         );
     });
 
-    test('Case 180: Verify that the attachment will be displayed as text when specifying -b param', async () => {
+    test('Case 340: Verify that the attachment will be displayed as text when specifying -b param', async () => {
         const fieldArg = `-c ${fieldNames}`;
         const attachmentArg = `-b ${attachmentFolder}`;
         const query = makeQueryToGetAppData();
@@ -53,7 +53,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             appInfo,
             userCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg,
             queryArg,
             attachmentArg
@@ -66,7 +66,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
         );
     });
 
-    test('Case 180 - Guest Space: Verify that the attachment will be displayed as text when specifying -b param', async () => {
+    test('Case 340 - Guest Space: Verify that the attachment will be displayed as text when specifying -b param', async () => {
         const guestSpaceApp = apps.guestSpaceApp.appWithoutAttachment;
         const guestSpaceArg = `-g ${guestSpaceApp.spaceId}`;
         const fieldArg = `-c ${fieldNames}`;
@@ -80,7 +80,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             guestSpaceApp,
             userCreds,
             preparedCSVFile,
-            true,
+            false,
             guestSpaceArg
         );
         await importTest.importWithAttachment(attachmentFolder);
@@ -89,7 +89,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             guestSpaceApp,
             userCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg,
             guestSpaceArg,
             queryArg,
@@ -105,7 +105,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
         await deleteAllAppData(guestSpaceApp, userCreds);
     });
 
-    test('Case 181: Verify that if user specify non-existed folder, this folder will be created', async () => {
+    test('Case 341: Verify that if user specify non-existed folder, this folder will be created', async () => {
         const fieldArg = `-c ${fieldNames}`;
         const attachmentArg = `-b ./non-exist`;
         const query = makeQueryToGetAppData();
@@ -115,7 +115,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             appInfo,
             userCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg,
             queryArg,
             attachmentArg
@@ -128,7 +128,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
         );
     });
 
-    test('Case 184-185-186: Verify the case with attachment are text files, image files or exe files (doc, xls, csv, png, jpg, exe)', async () => {
+    test('Case 344-345-346: Verify the case with attachment are text files, image files or exe files (doc, xls, csv, png, jpg, exe)', async () => {
         const fieldArg = `-c ${fieldNames}`;
         const attachmentArg = `-b ${attachmentFolder}`;
         const query = makeQueryToGetAppData();
@@ -138,7 +138,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             appInfo,
             userCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg,
             queryArg,
             attachmentArg
@@ -151,7 +151,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
         );
     });
 
-    test('Case 187: Verify that the attachment will NOT be downloaded if user does NOT have proper permissions', async () => {
+    test('Case 347: Verify that the attachment will NOT be downloaded if user does NOT have proper permissions', async () => {
         const fieldArg = `-c ${fieldNames}`;
         const attachmentArg = `-b ${attachmentFolder}`;
         const query = makeQueryToGetAppData();
@@ -161,7 +161,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             appInfo,
             userNoViewAttachmentCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg,
             queryArg,
             attachmentArg
@@ -172,7 +172,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
         await exportTest.verifyExportedData(actualExportedDataFile, expectedExportedDataFile);
     });
 
-    test('Case 188: In combination with params -o -e -q, verify that the attachment will be downloaded when specifying -b', async () => {
+    test('Case 348: In combination with params -o -e -q, verify that the attachment will be downloaded when specifying -b', async () => {
         const fieldArg = `-c ${fieldNames}`;
         const attachmentArg = `-b ${attachmentFolder}`;
         const outputArg = `-o csv`;
@@ -183,7 +183,7 @@ describe('Export with --export option: Export data with attachment (-b)', () => 
             appInfo,
             userCreds,
             actualExportedDataFile,
-            true,
+            false,
             fieldArg,
             queryArg,
             outputArg,
