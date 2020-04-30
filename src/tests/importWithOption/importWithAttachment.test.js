@@ -4,7 +4,7 @@ import { makeQueryToGetAppData } from '../../common/helper';
 import { getFieldArray } from '../../utils/csvUtils';
 import { deleteAllAppData } from '../../utils/kintoneApiUtils';
 
-describe('Import with --import option: Import new attachment with file (-b)', () => {
+describe.skip('Import with --import option: Import new attachment with file (-b)', () => {
     const appInfo = apps.normalSpaceApp;
     const userCreds = users.admin;
     const importedCSVFile = filePaths.import_test.importCSVDataWithAttachment;
@@ -78,7 +78,7 @@ describe('Import with --import option: Import new attachment with file (-b)', ()
         await importTest.verifyImportedAttachments(fieldNames, query);
     });
 
-    test('C053: Verify the case uploading multiple files to one record', async () => {
+    test.only('C053: Verify the case uploading multiple files to one record', async () => {
         const importedDataFile = filePaths.import_test.importCSVDataWithMultiAttachmentsOnOneRecord;
         const importTest = new ImportTestCommon(appInfo, userCreds, importedDataFile);
 
@@ -97,8 +97,7 @@ describe('Import with --import option: Import new attachment with file (-b)', ()
             appInfo.apiToken.fullPermission,
             attachmentFolder
         );
-
-        importTest.verifyCliKintoneSuccessMessage(result);
+        await importTest.verifyCliKintoneSuccessMessage(result);
 
         const fieldNames = await getFieldArray(importedCSVFile);
         await importTest.verifyImportedAttachments(fieldNames, query);

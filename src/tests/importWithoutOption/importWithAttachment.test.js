@@ -4,7 +4,7 @@ import { makeQueryToGetAppData } from '../../common/helper';
 import { getFieldArray } from '../../utils/csvUtils';
 import { deleteAllAppData } from '../../utils/kintoneApiUtils';
 
-describe('Import with --import without option: Import new attachment with file (-b)', () => {
+describe.skip('Import with --import without option: Import new attachment with file (-b)', () => {
     const appInfo = apps.normalSpaceApp;
     const userCreds = users.admin;
     const importedCSVFile = filePaths.import_test.importCSVDataWithAttachment;
