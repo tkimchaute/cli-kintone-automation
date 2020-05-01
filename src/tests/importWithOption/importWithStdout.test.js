@@ -11,7 +11,7 @@ describe('Import with --import option: Import with stdout', () => {
     const kintoneCli = getCliKintoneCommand();
     const importedCSVFile = filePaths.import_test.importCSVData;
 
-    test('C136: Import from result of export to stdout', async () => {
+    test.skip('C136: Import from result of export to stdout', async () => {
         const prepareTest = new ImportTestCommon(appInfo, userCreds, importedCSVFile);
         await prepareTest.importWithUserNamePassword();
 
@@ -19,6 +19,7 @@ describe('Import with --import option: Import with stdout', () => {
         const otherArg =
             `--export -c ${fieldNames} | ` +
             `${kintoneCli} -a ${appInfo.appId} -d ${appInfo.domain} -u ${userCreds.username} -p ${userCreds.password} -D --import`;
+
         const importTest = new ImportTestCommon(appInfo, userCreds, undefined, false, otherArg);
 
         const result = await importTest.importWithUserNamePassword();
