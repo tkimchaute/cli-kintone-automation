@@ -225,7 +225,9 @@ const makeJsonDataFile = (data, filePath) => {
 
     const json = JSON.stringify(data);
     try {
-        fs.writeFile(filePath, json, 'utf8');
+        fs.writeFile(filePath, json, err => {
+            if (err) throw err;
+        });
     } catch {
         console.log('Error: can not export json');
     }
@@ -252,7 +254,9 @@ const makeJsonDataFileWithAttachment = (data, filePath) => {
 
     const json = JSON.stringify(data);
     try {
-        fs.writeFile(filePath, json, 'utf8');
+        fs.writeFile(filePath, json, err => {
+            if (err) throw err;
+        });
     } catch {
         console.log('Error: can not export json');
     }
