@@ -43,19 +43,19 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm run test
-  test_windows:
-    needs: [ test_mac, test_linux ]
-    strategy:
-      matrix:
-        platform: [ windows-latest ]
-        node-version: [ 10.16.3 ]
-    runs-on: ${{ matrix.platform }}
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm install
-      - run: npm run test
+#  test_windows:
+#    needs: [ test_mac, test_linux ]
+#    strategy:
+#      matrix:
+#        platform: [ windows-latest ]
+#        node-version: [ 10.16.3 ]
+#    runs-on: ${{ matrix.platform }}
+#
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#      - run: npm install
+#      - run: npm run test
