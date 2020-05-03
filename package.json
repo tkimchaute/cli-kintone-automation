@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand src/tests/importWithOption",
+    "test": "jest --runInBand",
     "eslint:check": "eslint --max-warnings=0 .",
     "eslint:fix": "eslint --fix ."
   },
