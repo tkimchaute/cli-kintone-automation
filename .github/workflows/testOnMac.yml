@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  test_linux:
+  test_mac:
     strategy:
       matrix:
         platform: [ macos-latest ]
@@ -25,5 +25,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run test
-    - run: trigger testOnLinux
-    - run: trigger testOnWindows
+    - run: testOnLinux
+    - run: testOnWindows

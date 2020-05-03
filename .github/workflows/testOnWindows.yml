@@ -8,7 +8,7 @@ on:
     types: testOnWindows
 
 jobs:
-  test_linux:
+  test_windows:
     strategy:
       matrix:
         platform: [ windows-latest ]
