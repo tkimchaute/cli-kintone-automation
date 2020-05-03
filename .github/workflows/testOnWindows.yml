@@ -4,16 +4,13 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  repository_dispatch:
+    types: testOnWindows
 
 jobs:
   test_linux:
     strategy:
       matrix:
-        #platform: [ ubuntu-latest, macos-latest, windows-latest ]
         platform: [ windows-latest ]
         node-version: [ 10.16.3 ]
     runs-on: ${{ matrix.platform }}
