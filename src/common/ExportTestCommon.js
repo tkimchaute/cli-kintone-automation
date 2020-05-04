@@ -46,7 +46,7 @@ export default class ExportTestCommon extends CliKintoneTestBase {
      */
     async exportWithUserNameAndInputPassword() {
         let command =
-            `echo ${this._auth.password} |` +
+            `echo ${this._auth.password}|` +
             this._kintoneCli +
             ` -a ${this._appInfo.appId}` +
             ` -d ${this._appInfo.domain}` +

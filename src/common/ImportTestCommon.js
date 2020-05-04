@@ -54,7 +54,7 @@ export default class ImportTestCommon extends CliKintoneTestBase {
      */
     async importWithUserNameAndInputPassword() {
         let command =
-            `echo ${this._auth.password} |` +
+            `echo ${this._auth.password}|` +
             this._kintoneCli +
             ` -a ${this._appInfo.appId}` +
             ` -d ${this._appInfo.domain}` +
@@ -194,6 +194,7 @@ export default class ImportTestCommon extends CliKintoneTestBase {
                 if (err) {
                     console.log(err);
                 }
+                // console.log(res);
                 makeJsonDataFile(res, actualJsonDataGetFromAppByApi);
             }
         );
@@ -222,6 +223,7 @@ export default class ImportTestCommon extends CliKintoneTestBase {
                 if (err) {
                     console.log(err);
                 }
+                console.log(res);
                 makeJsonDataFileWithAttachment(res, actualJsonDataGetFromAppByApi);
             }
         );
