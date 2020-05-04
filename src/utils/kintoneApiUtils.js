@@ -211,7 +211,7 @@ const getFileContentByApi = async (
  * @param {Object} data
  * @param {string} filePath
  */
-const makeJsonDataFile = (data, filePath) => {
+const makeJsonDataFile = async(data, filePath) => {
     /*
      * Remove $id of area on subtable
      * Reason: The $id field of subtable will be automatically generated
@@ -225,7 +225,7 @@ const makeJsonDataFile = (data, filePath) => {
 
     const json = JSON.stringify(data);
     try {
-        fs.writeFile(filePath, json, err => {
+        fs.writeFileSync(filePath, json, err => {
             if (err) throw err;
         });
     } catch {
@@ -237,7 +237,7 @@ const makeJsonDataFile = (data, filePath) => {
  * @param {Object} data
  * @param {string} filePath
  */
-const makeJsonDataFileWithAttachment = (data, filePath) => {
+const makeJsonDataFileWithAttachment = async(data, filePath) => {
     /*
      * Remove $id of area on subtable
      * Reason: The $id field of subtable will be automatically generated
@@ -254,7 +254,7 @@ const makeJsonDataFileWithAttachment = (data, filePath) => {
 
     const json = JSON.stringify(data);
     try {
-        fs.writeFile(filePath, json, err => {
+        fs.writeFileSync(filePath, json, err => {
             if (err) throw err;
         });
     } catch {

@@ -189,15 +189,16 @@ export default class ImportTestCommon extends CliKintoneTestBase {
      */
     async verifyImportedData(fieldNames, expectedDataFile, query = '', basicAuth = {}) {
         const actualJsonDataGetFromAppByApi = filePaths.import_test.actualJsonDataGetFromAppByApi;
+        let resData;
         await getAppDataByApi(this._appInfo, this._auth, fieldNames, query, basicAuth).then(
             (res, err) => {
                 if (err) {
                     console.log(err);
                 }
-                // console.log(res);
-                makeJsonDataFile(res, actualJsonDataGetFromAppByApi);
+                resData = res;
             }
         );
+        await makeJsonDataFile(resData, actualJsonDataGetFromAppByApi);
         const hashOfExpectedImportFile = await hashCsvFile(expectedDataFile);
         const hashOfActualDataFile = await hashCsvFile(actualJsonDataGetFromAppByApi);
 
@@ -218,15 +219,16 @@ export default class ImportTestCommon extends CliKintoneTestBase {
         basicAuth = {}
     ) {
         const actualJsonDataGetFromAppByApi = filePaths.import_test.actualJsonDataGetFromAppByApi;
+        let resData;
         await getAppDataByApi(this._appInfo, this._auth, fieldNames, query, basicAuth).then(
             (res, err) => {
                 if (err) {
                     console.log(err);
                 }
-                console.log(res);
-                makeJsonDataFileWithAttachment(res, actualJsonDataGetFromAppByApi);
+                resData = res;
             }
         );
+        await makeJsonDataFileWithAttachment(resData, actualJsonDataGetFromAppByApi);
         const hashOfExpectedImportFile = await hashCsvFile(expectedDataFile);
         const hashOfActualDataFile = await hashCsvFile(actualJsonDataGetFromAppByApi);
 
