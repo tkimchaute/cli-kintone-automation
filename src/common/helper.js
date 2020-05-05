@@ -9,7 +9,7 @@ const os_system = process.platform;
  * @param {boolean} showHelp
  * @returns {Promise<unknown>}
  */
-function executeCommand(cmd, showHelp = false) {
+const executeCommand = async (cmd, showHelp = false) => {
     return new Promise(resolve => {
         exec(cmd, (error, stdout, stderr) => {
             if (error && !showHelp) {
@@ -29,7 +29,7 @@ function executeCommand(cmd, showHelp = false) {
             resolve(stdout);
         });
     });
-}
+};
 
 /**
  * Hash csv file to string by SHA-256
@@ -37,7 +37,7 @@ function executeCommand(cmd, showHelp = false) {
  * @param {string} algorithm
  * @return {Promise<string>}
  */
-function hashCsvFile(filePath, algorithm = 'sha256') {
+const hashCsvFile = async (filePath, algorithm = 'sha256') => {
     return new Promise((resolve, reject) => {
         const shasum = crypto.createHash(algorithm);
         try {
@@ -54,7 +54,7 @@ function hashCsvFile(filePath, algorithm = 'sha256') {
             return reject('calc fail');
         }
     });
-}
+};
 
 /**
  * Detect OS (Windows, Linux, MacOS) then return appropriate cli-kintone command

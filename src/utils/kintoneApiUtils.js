@@ -211,7 +211,7 @@ const getFileContentByApi = async (
  * @param {Object} data
  * @param {string} filePath
  */
-const makeJsonDataFile = async(data, filePath) => {
+const makeJsonDataFile = async (data, filePath) => {
     /*
      * Remove $id of area on subtable
      * Reason: The $id field of subtable will be automatically generated
@@ -237,7 +237,7 @@ const makeJsonDataFile = async(data, filePath) => {
  * @param {Object} data
  * @param {string} filePath
  */
-const makeJsonDataFileWithAttachment = async(data, filePath) => {
+const makeJsonDataFileWithAttachment = async (data, filePath) => {
     /*
      * Remove $id of area on subtable
      * Reason: The $id field of subtable will be automatically generated
