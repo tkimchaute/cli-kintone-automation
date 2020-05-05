@@ -32,13 +32,10 @@ describe('Import with --import option: Import with stdout', () => {
 
     test('C138: Import from print/echo', async () => {
         const headerRow = 'Link,Text_area,Date,Time,Date_and_time';
-        const fieldData = 'https://vnexpress.net,This is text area,,15:43:00,2020-03-03T06:43:00Z';
+        const fieldData = 'https://vnexpress.net,This is text area,2020-03-03,15:43:00,2020-03-03T06:43:00Z';
         let inputStringCommand = `(echo ${headerRow} && echo ${fieldData})`;
-        if (os === 'win32') {
-            inputStringCommand = `printf "${headerRow}\\n${fieldData}"`;
-        }
         const command =
-            `${inputStringCommand} | ` +
+            `${inputStringCommand}| ` +
             `${kintoneCli} -a ${appInfo.appId} -d ${appInfo.domain} -u ${userCreds.username} -p ${userCreds.password} --import`;
         const importTest = new ImportTestCommon(appInfo, userCreds, undefined, false);
 
