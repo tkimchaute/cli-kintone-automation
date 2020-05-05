@@ -7,7 +7,7 @@ import { deleteFolderRecursive } from '../../utils/fileUtils';
 import { makeQueryToGetAppData } from '../../common/helper';
 import * as Path from 'path';
 
-describe('Export with --export option: Export data with attachment (-b)', () => {
+describe('Export without --export option: Export data with attachment (-b)', () => {
     const appInfo = apps.normalSpaceApp.appWithoutAttachment;
     const userCreds = users.admin;
     const userNoViewAttachmentCreds = users.userNoViewAttachmentFile;
