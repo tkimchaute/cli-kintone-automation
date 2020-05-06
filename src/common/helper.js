@@ -9,27 +9,6 @@ const os_system = process.platform;
  * @param {boolean} showHelp
  * @returns {Promise<unknown>}
  */
-// const executeCommand = async (cmd, showHelp = false) => {
-//     return new Promise(resolve => {
-//         exec(cmd, (error, stdout, stderr) => {
-//             if (error && !showHelp) {
-//                 if (
-//                     stdout &&
-//                     stdout.indexOf('Password') === -1 &&
-//                     stdout.indexOf('--help') === -1
-//                 ) {
-//                     resolve(stdout);
-//                 }
-//                 resolve(error);
-//             }
-//             if (stderr) {
-//                 resolve(stderr);
-//             }
-//
-//             resolve(stdout);
-//         });
-//     });
-// };
 function executeCommand(cmd, showHelp = false) {
     return new Promise(resolve => {
         exec(cmd, (error, stdout, stderr) => {
@@ -57,24 +36,6 @@ function executeCommand(cmd, showHelp = false) {
  * @param {string} algorithm
  * @return {Promise<string>}
  */
-// const hashCsvFile = async (filePath, algorithm = 'sha256') => {
-//     return new Promise((resolve, reject) => {
-//         const shasum = crypto.createHash(algorithm);
-//         try {
-//             const s = fs.createReadStream(filePath);
-//             s.on('data', function(data) {
-//                 shasum.update(data);
-//             });
-//
-//             s.on('end', function() {
-//                 const hash = shasum.digest('hex');
-//                 return resolve(hash);
-//             });
-//         } catch (error) {
-//             return reject('calc fail');
-//         }
-//     });
-// };
 function hashCsvFile(filePath, algorithm = 'sha256') {
     return new Promise((resolve, reject) => {
         const shasum = crypto.createHash(algorithm);

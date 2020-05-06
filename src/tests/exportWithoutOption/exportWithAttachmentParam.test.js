@@ -8,7 +8,7 @@ import { makeQueryToGetAppData } from '../../common/helper';
 import * as Path from 'path';
 
 describe('Export without --export option: Export data with attachment (-b)', () => {
-    const appInfo = apps.normalSpaceApp.appWithoutAttachment;
+    const appInfo = apps.normalSpaceApp.appWithAttachment;
     const userCreds = users.admin;
     const userNoViewAttachmentCreds = users.userNoViewAttachmentFile;
     const preparedCSVFile = filePaths.export_test.exportDataPreparationWithAttachment;
@@ -67,13 +67,16 @@ describe('Export without --export option: Export data with attachment (-b)', () 
     });
 
     test('Case 340 - Guest Space: Verify that the attachment will be displayed as text when specifying -b param', async () => {
-        const guestSpaceApp = apps.guestSpaceApp.appWithoutAttachment;
+        const guestSpaceApp = apps.guestSpaceApp.appWithAttachment;
         const guestSpaceArg = `-g ${guestSpaceApp.spaceId}`;
         const fieldArg = `-c ${fieldNames}`;
         const attachmentArg = `-b ${attachmentFolder}`;
         const query = makeQueryToGetAppData();
         const queryArg = `-q ${query}`;
 
+        // Remove attachment folders in case they are not deleted completely in previous tests
+        await deleteFolderRecursive(Path.join(filePaths.attachmentFolder, 'Attachment-0'));
+        await deleteFolderRecursive(Path.join(filePaths.attachmentFolder, 'Attachment-1'));
         // delete data in guest space
         await deleteAllAppData(guestSpaceApp, userCreds);
         const importTest = new ImportTestCommon(
