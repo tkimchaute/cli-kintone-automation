@@ -45,7 +45,7 @@ jobs:
     needs: [ test_mac, test_linux ]
     strategy:
       matrix:
-        platform: [ windows-latest ]
+        platform: [ windows-2016 ]
         node-version: [ 10.16.3 ]
     runs-on: ${{ matrix.platform }}
 
